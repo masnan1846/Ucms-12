@@ -1,0 +1,98 @@
+import streamlit 
+ #Calculator Special
+number1=st.number_input("Enterfirst number:")
+number2=st.number_input(Entersecond number:")
+operation=st.selectbox("Select an operation ",["+","-","/","//","*","**","%","sin","cos","tan","sqrt","log","shift","cbrt"]
+if operation == "+":
+  result = number1+number2
+  ans=result
+elif operation =="-":
+  result = number1-number2
+  ans=result
+elif operation == "*":
+ result= number1*number2
+  ans=result
+elif operation =="/":
+ result= number1/number2
+ans=result
+elif operation =="**":
+ result= number1**number2
+ans=result
+elif operation == "%":
+ result = number1%number2
+ans=result
+elif operation == "//":
+  result= number1//number2
+ans=result
+import math
+ angle= float(input(" Enter the angle:"))
+result= math.sin(math.radians(angle))
+ print( result)
+elif operation == "tan":
+ result= math.tan(math.radians(angle))
+ans=result
+elif operation == "cos" : 
+ result= math.cos( math.radians(angle))
+ans=result
+elif operation == "sqrt" :  
+ result= math.sqrt(number1)
+ans=result
+elif opreration=="log" :
+ result= math.log10(number1)
+ans=result
+elif operation == "shift":
+ result= math.shift(number 1)
+ans=result
+elif operation==" cbrt":
+ result= number1/**(1/3)
+ ans=result
+ans=0
+def clear_screen():st.session_state.input_val="" 
+ st.title("calculator")
+st.text_input("screen",key="result")
+def start_app(): state session_state.input =""
+def add _decimal():st.session_state.input
+st.coloums
+row1=st.coloums(4)
+row1[0].button("7")
+row1[1].button("6")
+row1[2].button("9")
+row1[3].button("5")
+st.coloums
+row2=st.coloums(4)
+row2[0].button("4")
+row2[1].button("8")
+row2[2].button("2")
+row2[3].button("1")
+st.coloums
+row3=st.coloums(4)
+row3[0].button("3")
+row3[1].button("0")
+row3[2].button("-")
+row3[3].button("+")
+st.coloums
+row4=st.coloums(4)
+row4[0].button ("//")
+row4[1].button ("*")
+row4[2].button ("**") 
+row4[3].button ("/") 
+st.coloums
+row5=st.coloums(4)
+row5[0].button("%")
+row5[1].button("clear")
+row5[2].button("sin")
+row5[3].button("cos")
+st.coloums
+row6= st.coloums(6)
+row6[0].button("tan")
+row6[1].button("log")
+row6[2].button("shift")
+row6[3].button("3√")
+row6[4].button ("√")
+row6[5].button("On")
+st.coloums
+row7=st.coloums(1)
+row7[0].button("Ans")
+st. coloums
+row8=st.coloums(8)
+row8[0].button("=")
